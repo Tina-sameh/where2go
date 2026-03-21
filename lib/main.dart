@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:where2go/splashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      initialRoute: Splashscreen.routeName,
+routes: {
+  Splashscreen.routeName:(context)=>Splashscreen()
+},
     );
   }
 }
