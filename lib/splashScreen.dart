@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:where2go/constants/appAssets.dart';
 
+import 'WhereToGoScreen.dart';
+
 class Splashscreen extends StatefulWidget {
   static const String routeName = "splash";
   const Splashscreen({super.key});
@@ -35,6 +37,7 @@ class _SplashscreenState extends State<Splashscreen>
     _controller.forward();
 
     Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushNamed(context, WhereToGoScreen.routeName);
     });
   }
   @override

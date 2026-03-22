@@ -1,0 +1,1 @@
+enum MsgType { bot, user }

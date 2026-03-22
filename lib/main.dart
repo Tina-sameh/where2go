@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:where2go/splashScreen.dart';
 
+import 'WhereToGoScreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: Splashscreen.routeName,
 routes: {
-  Splashscreen.routeName:(context)=>Splashscreen()
+  Splashscreen.routeName:(context)=>Splashscreen(),
+  WhereToGoScreen.routeName:(context)=>WhereToGoScreen(),
 },
     );
   }
